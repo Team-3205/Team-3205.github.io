@@ -37,7 +37,7 @@ h6 {
     color: #f8f8f8;
     
 /*    background: linear-gradient(-5deg, rgba(81, 12, 29, 0.6) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(135deg, rgba(185, 157, 164, 0.17) 0%,rgb(81, 12, 29) 100%), url(../img/DSC_0728.jpg) no-repeat center center ;*/
-
+  
     background-size: cover;
 }
 
@@ -103,7 +103,11 @@ h6 {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
+    background-color: #510C1D;
+    color: white; 
 }
+
+
 
 .section-heading {
     margin-bottom: 30px;
@@ -112,7 +116,7 @@ h6 {
 .section-heading-spacer {
     float: left;
     width: 200px;
-    border-top: 3px solid #e7e7e7;
+    border-top: 3px solid #9A8154;
 }
 
 .banner {

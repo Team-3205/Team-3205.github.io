@@ -118,7 +118,7 @@
 .item,
 .active {
     height: 100%;
-    margin-bottom: 60px;
+    
 }
 
 .carousel-inner {
@@ -135,6 +135,10 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.video{
+    margin-top: 30px; 
 }
 
 
