@@ -36,7 +36,7 @@ h6 {
     text-align: center;
     color: #f8f8f8;
     
-    background: linear-gradient(-5deg, rgba(81, 12, 29, 0.6) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(135deg, rgba(185, 157, 164, 0.17) 0%,rgb(81, 12, 29) 100%), url(../img/DSC_0728.jpg) no-repeat center center ;
+/*    background: linear-gradient(-5deg, rgba(81, 12, 29, 0.6) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(135deg, rgba(185, 157, 164, 0.17) 0%,rgb(81, 12, 29) 100%), url(../img/DSC_0728.jpg) no-repeat center center ;*/
 
     background-size: cover;
 }
