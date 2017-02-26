@@ -1,15 +1,19 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
 /*--------NAVBAR---------*/
 
 .navbar-default {
   background-color: #510c1d;
   border-color: #510c1d;
+    border-bottom: thick solid #9a8154;
 }
 .navbar-default .navbar-brand {
   color: #ffffff;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #9a8154;
+  color: #ffffff
 }
 .navbar-default .navbar-text {
   color: #ffffff;
@@ -54,6 +58,7 @@
   background-color: #510c1d;
 }
 .navbar-default .navbar-toggle {
+    margin-top: 19px !important; 
   border-color: #510c1d;
 }
 .navbar-default .navbar-toggle:hover,
@@ -139,6 +144,12 @@
 
 .video{
     margin-top: 30px; 
+}
+.sectionLine{
+    margin: 0px; 
+    background-color: #9a8154;
+    height: 8px;
+    
 }
 
 
