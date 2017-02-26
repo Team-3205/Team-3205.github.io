@@ -2,11 +2,21 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
 }
 /*--------NAVBAR---------*/
+.opaque-navbar{
+     background-color: rgba(0, 0, 0, 0); 
+    
+    transition: background-color .5s ease 0s; 
+}
 
-.navbar-default {
-  background-color: #510c1d;
+.opaque{
+     background-color: #510c1d;
   border-color: #510c1d;
     border-bottom: thick solid #9a8154;
+        transition: background-color .5s ease 0s;
+
+}
+.navbar-default {
+
 }
 .navbar-default .navbar-brand {
   color: #ffffff;
