@@ -15,9 +15,7 @@ body {
         transition: background-color .5s ease 0s;
 
 }
-.navbar-default {
 
-}
 .navbar-default .navbar-brand {
   color: #ffffff;
 }
@@ -35,6 +33,7 @@ body {
 .navbar-default .navbar-nav > li > a:focus {
   color: #9a8154;
 }
+/*
 .navbar-default .navbar-nav > li > .dropdown-menu {
   background-color: #510c1d;
 }
@@ -55,6 +54,7 @@ body {
   color: #9a8154;
   background-color: #510c1d;
 }
+*/
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
