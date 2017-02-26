@@ -1,38 +1,45 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
 }
+
+
 /*--------NAVBAR---------*/
-.opaque-navbar{
-     background-color: rgba(0, 0, 0, 0); 
-    
-    transition: background-color .5s ease 0s; 
+
+.opaque-navbar {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .5s ease 0s;
 }
 
-.opaque{
-     background-color: #510c1d;
-  border-color: #510c1d;
+.opaque {
+    background-color: #510c1d;
+    border-color: #510c1d;
     border-bottom: thick solid #9a8154;
-        transition: background-color .5s ease 0s;
-
+    transition: background-color .5s ease 0s;
 }
 
 .navbar-default .navbar-brand {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #ffffff
+    color: #ffffff
 }
+
 .navbar-default .navbar-text {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #9a8154;
+    color: #9a8154;
 }
+
+
 /*
 .navbar-default .navbar-nav > li > .dropdown-menu {
   background-color: #510c1d;
@@ -55,54 +62,63 @@ body {
   background-color: #510c1d;
 }
 */
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #9a8154;
-  background-color: #510c1d;
+    color: #9a8154;
+    background-color: #510c1d;
 }
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #9a8154;
-  background-color: #510c1d;
+    color: #9a8154;
+    background-color: #510c1d;
 }
+
 .navbar-default .navbar-toggle {
-    margin-top: 19px !important; 
-  border-color: #510c1d;
+    margin-top: 19px !important;
+/*    border-color: #510c1d;*/
+    border: none;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #510c1d;
+    background-color: transparent;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #ffffff;
+    border-color: #ffffff;
 }
+
 .navbar-default .navbar-link {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-link:hover {
-  color: #9a8154;
+    color: #9a8154;
 }
 
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #9a8154;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #9a8154;
-    background-color: #510c1d;
-  }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #9a8154;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #9a8154;
+        background-color: #510c1d;
+    }
 }
 
 .navbar {
@@ -122,23 +138,27 @@ body {
     font-size: 120%;
 }
 
+
 /*---------CONTENT----------*/
-.section-heading{
-    margin-top: 0px !important; 
+
+.section-heading {
+    margin-top: 0px !important;
 }
-.imageSlide{
-    padding:0px;
+
+.imageSlide {
+    padding: 0px;
 }
+
 .carousel,
 .item,
 .active {
     height: 100%;
-    
 }
 
 .carousel-inner {
     height: 100%;
 }
+
 
 /* Background images are set within the HTML using inline CSS, not here */
 
@@ -152,16 +172,12 @@ body {
     -o-background-size: cover;
 }
 
-.video{
-    margin-top: 30px; 
+.video {
+    margin-top: 30px;
 }
-.sectionLine{
-    margin: 0px; 
+
+.sectionLine {
+    margin: 0px;
     background-color: #9a8154;
     height: 8px;
-    
 }
-
-
-
-
