@@ -181,3 +181,15 @@ body {
     background-color: #9a8154;
     height: 8px;
 }
+.firstSectionLine{
+    float:left;
+    width:250px;
+    margin: 0px;
+}
+.spacerLine{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.content{
+    width: 80%;
+}

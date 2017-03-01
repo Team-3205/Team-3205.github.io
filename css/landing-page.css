@@ -114,8 +114,8 @@ h6 {
 }
 
 .section-heading-spacer {
-    float: left;
-    width: 200px;
+/*    float: left;
+*/    width: 200px;
     border-top: 3px solid #9A8154;
 }
 
