@@ -197,3 +197,15 @@ body {
 .teamImage{
     padding: 10px;
 }
+
+.footer-menu-divider{
+    color: white;
+}
+
+.footerHeading{
+    text-align:center;
+}
+
+.iconImage:hover{
+    opacity:0.6; 
+}
