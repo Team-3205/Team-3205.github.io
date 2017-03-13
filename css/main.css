@@ -245,4 +245,12 @@ body {
 
 .iconImage:hover{
     opacity:0.6; 
+        transition: opacity .15s ease-out;
+
+}
+a {
+    color: #ffffff !important;
+}
+a:hover{
+    color: #337ab7 !important;
 }
