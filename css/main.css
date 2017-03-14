@@ -1,5 +1,5 @@
 body {
-   font-family: 'Quicksand', sans-serif;
+ font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -12,7 +12,7 @@ body {
 
 .opaque {
     background-color: #510c1d;
-    border-color: #510c1d;
+    border-color: #5101cd;
     border-bottom: thick solid #9a8154;
     transition: background-color .5s ease 0s;
 }
@@ -79,7 +79,7 @@ body {
 
 .navbar-default .navbar-toggle {
     margin-top: 19px !important;
-/*    border-color: #510c1d;*/
+    /*    border-color: #510c1d;*/
     border: none;
 }
 
@@ -195,7 +195,44 @@ body {
 }
 
 .teamImage{
-    padding: 10px;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+
+    position: relative;
+        overflow: hidden;
+    z-index: 4;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:  rgba(0,0,0,0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .2s ease;
+}
+
+.teamImage:hover .overlay {
+  height: 30%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.sectionA{
+    
 }
 
 .footer-menu-divider{
@@ -208,12 +245,4 @@ body {
 
 .iconImage:hover{
     opacity:0.6; 
-        transition: opacity .15s ease-out;
-
-}
-a {
-    color: #ffffff !important;
-}
-a:hover{
-    color: #337ab7 !important;
 }
