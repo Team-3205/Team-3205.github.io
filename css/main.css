@@ -23,7 +23,7 @@ body {
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #ffffff
+    color: #ffffff !important; 
 }
 
 .navbar-default .navbar-text {
@@ -36,7 +36,7 @@ body {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #9a8154;
+    color: #9a8154 !important;
 }
 
 
