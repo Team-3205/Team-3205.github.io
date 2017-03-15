@@ -2,7 +2,37 @@ body {
  font-family: 'Quicksand', sans-serif;
 }
 
+/*custom media queries**/
 
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+
+}
+
+
+@media (max-width: 480px) {
+  .content{
+    width: 95% !important; 
+  }
+
+  .teamImage:hover .overlay {
+    height: 35% !important;
+  }
+  .text{
+    font-size: 8px !important;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+
+
+}
 /*--------NAVBAR---------*/
 
 .opaque-navbar {
@@ -265,5 +295,10 @@ body {
     background-color: #9a8154;
     height: 3px;
 
+}
+
+/*contact*/ 
+.contactHeading{
+  padding-left: 0px !important;
 }
 
