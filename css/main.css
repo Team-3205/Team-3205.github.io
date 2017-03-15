@@ -279,9 +279,13 @@ body {
 .footerHeading{
     text-align:center;
 }
-
+#gitHub{
+  opacity: 0.85;
+}
 .iconImage:hover{
-    opacity:0.6; 
+    opacity:0.6 !important; 
+        transition: opacity .2s ease 0s;
+
 }
 
 
