@@ -191,10 +191,11 @@ body {
     margin-bottom: 10px;
 }
 .content{
-    width: 60%;
+    width: 70%;
 }
 
 
+/* teamPictures*/
 
 .teamImage{
     display: block;
@@ -236,7 +237,11 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+/* footer */
 
+.footerLink{
+  color: #ffffff !important;
+}
 .footer-menu-divider{
     color: white;
 }
