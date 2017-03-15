@@ -201,11 +201,14 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
-
+/* about first */ 
 .video {
     margin-top: 30px;
 }
 
+.aboutFirst{
+  width: 80% !important;
+}
 .sectionLine {
     margin: 0px;
     background-color: #9a8154;
