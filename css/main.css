@@ -4,12 +4,30 @@ body {
 
 /*custom media queries**/
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
+  .roboImg{
+    width: 100% !important;
 
+  }
+  .overlay{
+    width: 100% !important;
+  }
+  .robotRow{
+    padding-left: 0% !important;
+  }
 }
 
 @media (max-width: 767px) {
+  .roboImg{
+    width: 100% !important;
 
+  }
+  .overlay{
+    width: 100% !important;
+  }
+  .robotRow{
+    padding-left: 0% !important;
+  }
 
 }
 
@@ -24,6 +42,9 @@ body {
   }
   .text{
     font-size: 8px !important;
+  }
+  .robotRow{
+    padding-left: 0% !important;
   }
 
 }
@@ -239,37 +260,9 @@ body {
     position: relative;
       
     z-index: 4;
+    margin-bottom: 5%;
 }
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color:  rgba(0,0,0,0.7);
-  overflow: hidden;
-  width: 100%;
-  
-  
-  height: 0;
-  transition: .2s ease;
-}
-
-.teamImage:hover .overlay {
-  height: 30%;
-}
-
-.text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
+.
 /* footer */
 
 .footerLink{
@@ -293,6 +286,43 @@ body {
 
 
 /* the robot */ 
+.robotRow{
+  padding-left: 5.2% ;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  /*left: 0;
+  right: 0;*/
+  background-color:  rgba(0,0,0,0.7);
+  overflow: hidden;
+  width: 90%;
+  
+  text-align: center;
+  height: 0;
+  transition: .2s ease;
+}
+
+.teamImage:hover .overlay {
+  height: 30%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
 
 .robotPics{
   text-align: center;
@@ -303,7 +333,13 @@ body {
     height: 3px;
 
 }
+.roboImg{
+  width: 90%;
+}
 
+.robotHeading{
+  margin-bottom: 20px;
+}
 /*contact*/ 
 .contactHeading{
   padding-left: 0px !important;
