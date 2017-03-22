@@ -5,8 +5,8 @@ body {
 /*custom media queries**/
 
 @media (max-width: 1000px) {
-  .roboImg{
-    width: 100% !important;
+  .roboImg
+{    width: 100% !important;
 
   }
   .overlay{
@@ -264,7 +264,10 @@ body {
 }
 .
 /* footer */
+.footerHeading a{
+    color: #ffffff !important;
 
+}
 .footerLink{
   color: #ffffff !important;
 }
