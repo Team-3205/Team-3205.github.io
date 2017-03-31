@@ -286,7 +286,12 @@ body {
         transition: opacity .2s ease 0s;
 
 }
+/* schedule */ 
 
+.calendar{
+  margin: 0 auto;
+  width: 100%;
+}
 
 /* the robot */ 
 .robotRow{
