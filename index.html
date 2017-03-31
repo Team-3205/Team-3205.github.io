@@ -25,9 +25,9 @@
         <![endif]-->
     </head>
 
-    <body data-spy="scroll" data-target="navbar">
+    <body data-spy="scroll" data-target="nav" data-offset="50">
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top topnav opaque-navbar " role="navigation">
+        <nav id = "nav" class="navbar navbar-default navbar-fixed-top topnav opaque-navbar " role="navigation">
             <div class="container topnav">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -42,11 +42,11 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li> <a href="#about" style="white-space: pre">A B O U T</a> </li>
-                        <li> <a href="#first " style="white-space: pre">F I R S T</a> </li>
-                        <li> <a href="#theRobot" style="white-space: pre">T H E  R O B O T</a> </li>
-                        <li> <a href="#schedule" style="white-space: pre">S C H E D U L E</a> </li>
-                        <li> <a href="#contact" style="white-space: pre">C O N T A C T</a> </li>
+                        <li> <a class = "scrollTo" href="#about" style="white-space: pre">A B O U T</a> </li>
+                        <li> <a class = "scrollTo" href="#first " style="white-space: pre">F I R S T</a> </li>
+                        <li> <a class = "scrollTo" href="#theRobot" style="white-space: pre">T H E  R O B O T</a> </li>
+                        <li> <a class = "scrollTo" href="#schedule" style="white-space: pre">S C H E D U L E</a> </li>
+                        <li> <a class = "scrollTo" href="#contact" style="white-space: pre">C O N T A C T</a> </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -302,14 +302,27 @@
         </script>
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
+            <script src="js/easing.js"></script>
+
         <script>
+        $(function () {
+            $('.scrollTo, .gototop').bind('click', function (event) {
+                console.log("a;sdlkjfalksdj"); 
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 800, 'easeOutExpo');
+                event.preventDefault();
+            });
+        });
+        $('body').scrollspy({ target: '#nav' , offset: 50})
         $(document).ready(function () {
 
             $(function () {
                 $(window).scroll(function () {
                     if ($(this).scrollTop() > 200) /*height in pixels when the navbar becomes non opaque*/ {
                         $('.opaque-navbar').addClass('opaque');
-                        console.log("dafuq");
+                        
                     }
                     else {
                         $('.opaque-navbar').removeClass('opaque');
