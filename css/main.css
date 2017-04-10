@@ -235,6 +235,7 @@ body {
     margin: 0px;
     background-color: #9a8154;
     height: 8px;
+    border: 0px !important;
 }
 .firstSectionLine{
     float:left;
@@ -353,5 +354,47 @@ left: 50%;
 .contactHeading{
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+.theRobot{
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  background-image:url("../img/DSC_0766.jpg");
+  height: 700px;
+
+
+   display: flex;               /* establish flex container */
+    align-items: center;      
+
+}
+.pictureDescr{
+
+ margin: 50px;
+  width: 600px;
+  text-align: center;
+}
+.pictureDescr h2{
+      padding-top: 15px;
+    padding-right: 13px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+.pictureDescrInner{
+ margin-top: 20px;
+  width: 900px;
+  text-align: center;
+}
+.pictureDescrInner p{
+  padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+.pictureHeading{
+  margin: 0;
+  background: #ffffff;
+  width: 50%;
 }
 
