@@ -296,6 +296,10 @@ body {
 }
 
 /* the robot */ 
+
+.content-section-c{
+  padding-top: 0px;
+}
 .robotRow{
   padding-left: 5.2% ;
 }
