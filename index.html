@@ -28,10 +28,15 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-
+    <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
     <body data-spy="scroll" data-target="nav" data-offset="50">
+
         <!-- Navigation -->
-        <nav id = "nav" class="navbar navbar-default navbar-fixed-top topnav opaque-navbar " role="navigation">
+        <nav id = "nav" class="navbar navbar-default navbar-fixed-top topnav  opaque-navbar " role="navigation">
             <div class="container topnav">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -57,7 +62,7 @@
             </div>
             <!-- /.container -->
         </nav>
-           
+
         <!-- Header -->
         <header id="myCarousel" class="carousel slide">
             <!-- Indicators -->
@@ -110,12 +115,12 @@
 
                 <div class = "row">
 
-                 <hr class="section-heading-spacer firstSectionLine">
+                   <hr class="section-heading-spacer firstSectionLine">
 
-                 <h2  style="white-space: pre">CCHS  PATRIOTS</h2>
-                 <p class="lead">Founded in 2010, FRC Team 3205 Patriots is a student run FIRST Robotics team at <a href = "http://www.concordcarlisle.org/">Concord Carlisle High School</a> in Massachusetts that competes in the annual FIRST Robotics Competition (FRC).</p>
-             </div>
-             <div class="row robotRow">
+                   <h2  style="white-space: pre">CCHS  PATRIOTS</h2>
+                   <p class="lead">Founded in 2010, FRC Team 3205 Patriots is a student run FIRST Robotics team at <a href = "http://www.concordcarlisle.org/">Concord Carlisle High School</a> in Massachusetts that competes in the annual FIRST Robotics Competition (FRC).</p>
+               </div>
+               <div class="row robotRow">
                 <div class="col-lg-6 col-sm-12 teamImage">
                     <img class="img-responsive roboImg" src="img/DSC_0531.jpg" alt="">
 
@@ -341,32 +346,51 @@
     //     .delay(1700)
     //     .fadeOut();
     // });
+$(document).ready(function() {
+
+    setTimeout(function(){
+        $('body').addClass('loaded');
+
+    }, 2000);
+
+});
+$(function () {
+    $('.scrollTo, .gototop').bind('click', function (event) {
+        console.log("a;sdlkjfalksdj"); 
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 800, 'easeOutExpo');
+        event.preventDefault();
+    });
+});
+$('body').scrollspy({ target: '#nav' , offset: 50})
+$(document).ready(function () {
+
     $(function () {
-        $('.scrollTo, .gototop').bind('click', function (event) {
-            console.log("a;sdlkjfalksdj"); 
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 800, 'easeOutExpo');
-            event.preventDefault();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) /*height in pixels when the navbar becomes non opaque*/ {
+                $('.opaque-navbar').addClass('opaque');
+                    $(".navbar-brand").css("color", "#ffffff"); 
+                    $(".navbar-brand").css("transition","color 0.2s ease"); 
+                    $(".navbar-nav li a").css("color", "#ffffff"); 
+                    $(".navbar-nav li a").css("transition","color 0.2s ease"); 
+                     
+
+
+
+            }
+            else {
+                $('.opaque-navbar').removeClass('opaque');
+               $(".navbar-brand").css("color", "#d1d1d1"); 
+                    $(".navbar-brand").css("transition","color 0.2s ease"); 
+                    $(".navbar-nav li a").css("color", "#d1d1d1"); 
+                    $(".navbar-nav li a").css("transition","color 0.2s ease"); 
+            }
         });
     });
-    $('body').scrollspy({ target: '#nav' , offset: 50})
-    $(document).ready(function () {
-
-        $(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 200) /*height in pixels when the navbar becomes non opaque*/ {
-                    $('.opaque-navbar').addClass('opaque');
-
-                }
-                else {
-                    $('.opaque-navbar').removeClass('opaque');
-                }
-            });
-        });
-    });
-    </script>
+});
+</script>
 </body>
 
 </html>
