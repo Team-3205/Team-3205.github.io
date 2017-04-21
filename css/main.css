@@ -60,7 +60,7 @@ body {
 .opaque-navbar {
     background-color: rgba(0, 0, 0, 0);
     transition: background-color .5s ease 0s;
-    border: none;
+    
 }
 
 .opaque {
@@ -436,7 +436,7 @@ left: 50%;
     left: 5px;
     right: 5px;
     bottom: 5px;
-    border: 3px solid #510c1d;
+    border: 3px solid #9a8154;
 }
 #loader:after {
     content: "";
@@ -481,7 +481,7 @@ left: 50%;
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #510c1d;
+    border-top-color: #9a8154;
     -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
       animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
@@ -530,7 +530,7 @@ left: 50%;
     top: 0;
     width: 51%;
     height: 100%;
-    background: #d1d1d1;
+    background: #510c1d;
     z-index: 1000;
 }
  
