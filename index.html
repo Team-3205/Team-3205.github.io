@@ -145,25 +145,20 @@
     <!-- /.content-section-a -->
     <hr class="sectionLine">
     <div class="content-section-b" id = "first">
-        <div class="container content aboutFirst">
+        <div class="container  aboutFirst">
             <div class="row">
-                <div class="col-lg-6  col-sm-6">
+                <div class="col-lg-6  col-sm-12 padding-zero">
                     <hr class="section-heading-spacer spacerLine">
                     
                     <h2 class="section-heading">FIRST ROBOTICS</h2>
                     <p class="lead">FIRST Robotics Competition (FRC) is an international high school robotics competition. Each year, teams of high school students and mentors work during a six-week period to build game-playing robots that weigh up to 120 pounds. Robots complete tasks such as scoring balls into goals, flying discs into goals, inner tubes onto racks, hanging on bars, and balancing robots on balance beams. The game changes yearly, keeping the excitement fresh and giving each team a more level playing field. This year's competition is titled "First Steamworks."</p>
                 </div>
-                <div class="col-lg-6   col-sm-6" style="text-align: center">
-                    <iframe class="video" width="100%" height="375" src="https://www.youtube.com/embed/EMiNmJW7enI" frameborder="0" allowfullscreen></iframe>
-                    <p class = "lead" style="font-size: 90%"> This year's competition video, First Steamworks.</p>
+                <div class="col-lg-6  col-sm-12 embed-responsive embed-responsive-16by9 videoContainer" >
+                 <iframe class="embed-responsive-item video"  src="https://www.youtube.com/embed/EMiNmJW7enI" ></iframe>
+                  
                 </div>
             </div>
-            <div class = "row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-
-
-                </div>
-            </div>
+            
         </div>
         <!-- /.container -->
     </div>
@@ -351,7 +346,7 @@ $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
 
-    }, 2000);
+    }, 1000);
 
 });
 $(function () {
@@ -387,7 +382,7 @@ $(document).ready(function () {
                     $(".navbar-nav li a").css("color", "#d1d1d1"); 
                     $(".navbar-nav li a").css("transition","color 0.2s ease"); 
             }
-        });
+        }); 
     });
 });
 </script>
