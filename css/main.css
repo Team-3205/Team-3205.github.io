@@ -332,6 +332,45 @@ body {
 
 /* the robot */
 
+#theRobot{
+  margin-bottom: 20px;
+}
+
+.arrow.down{
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+.arrow{
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -moz-transition: all 0.15s linear;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+.cardHeading{
+  margin-bottom: 20px !important;
+  margin-left: 50px !important;
+}
+.cardShort{
+  text-align: left;
+  padding: 1em;
+  width: 100% !important;
+  background-color: #dfdfdf ;
+  margin-top: 20px;
+}
+.cardShort:hover{
+  background-color: #C8C8C8;
+}
+.cardLong{
+  width: 100%;
+  display: none;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  padding-top: 20px; 
+}
+
 .performance{
   text-align: left;
 }

@@ -224,19 +224,51 @@
     </div>
   </div>
 </div>
-<div class = "row robotRow">
-  <div class = "col-lg-6 col-sm-12 performance">
-    <h2 class = "section-heading" style = "font-size: 30px">PERFORMANCE</h2>
-    <p><b style = "font-size: 20px">NE District - SE Mass Event - Bridgewater</b></p>
-    <p>Team 3205 was Rank #10 with a record of <strong>11-6-0</strong></p>
-
-    <p>  <b style = "font-size: 20px">NE District - Greater Boston Event - Revere</b></p>
-      <p>Team 3205 was Rank #21 with a record of <strong>5-8-1</strong><p>
+<div class = "row ">
+  <div class = " cardShort col-lg-12 col-sm-12" id = "specs">
+    <span class="glyphicon glyphicon-triangle-right arrow" id = "specArrow" style = "font-size: 30px" aria-hidden="true"></span>
+    <h2 class = "cardHeading" style = "font-size: 30px">SPECIFICATIONS</h2>
 
   </div>
-  <div class = "col-lg-6 col-sm-12">
-    <img class="img-responsive roboImg" src="img/DSC_1363.jpg" alt="">
+
+  <div class = "cardLong col-lg-12 col-sm-12">
+    <div class = "col-lg-6 col-sm-12 performance">
+      <p><b style = "font-size: 20px">DRIVETRAIN</b></p>
+      <p>Tank drive powered by four cim motors with two omniwheels in the back. </p>
+
+      <p>  <b style = "font-size: 20px">GEARS</b></p>
+        <p>Active system using a linear actuator to hold and release the gear.<p>
+          <p>  <b style = "font-size: 20px">CLIMBER</b></p>
+            <p>PVC pipe drum with a notch drilled into it for the rope, powered by two cim motors<p>
+
+    </div>
+    <div class = "col-lg-6 col-sm-12">
+      <img class="img-responsive roboImg" src="img/DSC_0682.jpg" alt="">
+    </div>
   </div>
+
+</div>
+<div class = "row ">
+  <div class = " cardShort col-lg-12 col-sm-12" id = "perf">
+    <span class="glyphicon glyphicon-triangle-right arrow" id = "perfArrow" style = "font-size: 30px" aria-hidden="true"></span>
+    <h2 class = "cardHeading" style = "font-size: 30px">PERFORMANCE</h2>
+
+  </div>
+
+  <div class = "cardLong col-lg-12 col-sm-12">
+    <div class = "col-lg-6 col-sm-12 performance">
+      <p><b style = "font-size: 20px">NE District - SE Mass Event - Bridgewater</b></p>
+      <p>Team 3205 was Rank #10 with a record of <strong>11-6-0</strong></p>
+
+      <p>  <b style = "font-size: 20px">NE District - Greater Boston Event - Revere</b></p>
+        <p>Team 3205 was Rank #21 with a record of <strong>5-8-1</strong><p>
+
+    </div>
+    <div class = "col-lg-6 col-sm-12">
+      <img class="img-responsive roboImg" src="img/DSC_1363.jpg" alt="">
+    </div>
+  </div>
+
 </div>
 </div>
 
@@ -364,6 +396,21 @@ $(document).ready(function() {
   }, 1000);
 
 });
+$("#specs").click(function(){
+		console.log("faculty clicked");
+    $("#specArrow").toggleClass("down")  ;
+
+		$(this).next(".cardLong").slideToggle("fast", function(){
+		});
+	});
+  $("#perf").click(function(){
+  		console.log("faculty clicked");
+      $("#perfArrow").toggleClass("down")  ;
+
+  		$(this).next(".cardLong").slideToggle("fast", function(){
+  		});
+  	});
+
 $(function () {
   $('.scrollTo, .gototop').bind('click', function (event) {
     console.log("a;sdlkjfalksdj");
