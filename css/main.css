@@ -368,7 +368,7 @@ body {
   display: none;
   margin-bottom: 20px;
   background-color: #f8f8f8;
-  padding-top: 20px; 
+  padding-top: 20px;
 }
 
 .performance{
@@ -453,7 +453,7 @@ left: 50%;
 .pictureDescr{
 
  margin: 50px;
-  width: 600px;
+  width: 40%;
   text-align: center;
 }
 .pictureDescr h2{
@@ -464,7 +464,7 @@ left: 50%;
 }
 .pictureDescrInner{
  margin-top: 20px;
-  width: 900px;
+  width: 60%;
   text-align: center;
 }
 .pictureDescrInner p{
