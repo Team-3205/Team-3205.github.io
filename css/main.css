@@ -455,8 +455,8 @@ left: 50%;
 .pictureDescr{
 
  margin: 50px;
-  width: 40%;
-  text-align: center;
+
+ text-align: center;
 }
 .pictureDescr h2{
       padding-top: 15px;
@@ -466,7 +466,7 @@ left: 50%;
 }
 .pictureDescrInner{
  margin-top: 20px;
-  width: 60%;
+ 
   text-align: center;
 }
 .pictureDescrInner p{
@@ -478,7 +478,7 @@ left: 50%;
 .pictureHeading{
   margin: 0;
   background: #ffffff;
-  width: 50%;
+  width:;
 }
 
 
